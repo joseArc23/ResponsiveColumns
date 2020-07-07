@@ -1,31 +1,86 @@
+:root {
+    /*  colors  */
+    --color-brown: #312614;
+    --color-light-coffee: #b7832f;
+    --color-dark-grey: #707070;
+    --color-white: #fff;    
+}
+/*
+    colors
+    #312614
+    #b7832f
+    #707070
+    #fff
+    font sizes
+    h1: 3rem
+    h2: 1.5rem
+    body:1.125rem
+    layout
+    max-width: 980px
+*/
 body {
     background-color: #f1f1f1;
+    font-size: 1.125rem;
+    color: var(--color-dark-grey);
+    margin: 0;
 }
-.header,
+
+/* typography */
 h1,
 h2 {
     text-transform: capitalize;
 }
-.header-img {
-    width: 100%;
+
+h1 {
+    font-size: 3rem;
+    color: #212614;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 .header-color {
-    color: pink;
+    color: var(--color-light-coffee);
 }
+
+p {
+    margin-top: 0;
+}
+
+/* layout */
 .container {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
+    width: 90%; /*to get more distance */
+    max-width: 980px;
+    margin: 0 auto;
+
+}
+
+.header-img {
+    max-width: 100%;
 }
 
 .columns {
     display: flex;
     flex-direction: row;
-    /* border: 1px solid black; */
-
+    margin: 1em 0;
+    /* use justify-content to make room for your columns */
+    justify-content: space-between;
 }
-.col {
-    /* border: 1px solid black; */
 
+.col {
+    width: 20%;
+}
+.col-double {
+    width: 45%;
+}
+.col-triple {
+    width: 70%;
+}
+
+.col-brown {
+    color: var(--color-white);
+    background-color: var(--color-brown);
+    padding: 1em;
 }
