@@ -67,9 +67,11 @@ p {
     margin: 1em 0;
     /* use justify-content to make room for your columns */
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .col {
+    border: 1px solid black;
     width: 20%;
 }
 .col-double {
