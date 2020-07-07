@@ -1,3 +1,31 @@
 body {
     background-color: #f1f1f1;
 }
+.header,
+h1,
+h2 {
+    text-transform: capitalize;
+}
+.header-img {
+    width: 100%;
+}
+
+.header-color {
+    color: pink;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+
+}
+.col {
+    /* border: 1px solid black; */
+
+}
