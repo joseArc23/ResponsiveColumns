@@ -70,8 +70,15 @@ p {
     align-items: flex-start;
 }
 
-.col {
-    border: 1px solid black;
+/* you can make varius @media with the same condition */
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+    }
+}
+
+.col-single {
+    /* border: 1px solid black; */
     width: 20%;
 }
 .col-double {
@@ -79,6 +86,15 @@ p {
 }
 .col-triple {
     width: 70%;
+}
+
+/* making the layout fully responsive */
+@media (max-width: 600px) {
+    .col-single,
+    .col-double,
+    .col-triple {
+        width: 95%;
+    }
 }
 
 .col-brown {
